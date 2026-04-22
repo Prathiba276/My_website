@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sasank | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0f172a;
+      color: white;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    header {
+      text-align: center;
+      padding: 80px 20px;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+    }
+    button {
+      padding: 10px 15px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
 
+<nav>
+  <div><strong>Venkata Kausthubh</strong></div>
+  <div>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header>
+  <h1>Hi, I'm Kausthubh 👋</h1>
+  <p>Aspiring Computer Scientist | Building Projects | Learning Java & AI</p>
+  <button onclick="scrollToProjects()">View My Work</button>
+</header>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a middle school student passionate about coding, self-improvement, and building real-world projects.
+    Currently learning Java and preparing for AP Computer Science.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Java Calculator</h3>
+      <p>A calculator app built using Java and graphical interface.</p>
+    </div>
+    <div class="card">
+      <h3>Study Tracker</h3>
+      <p>A tool to track study hours and productivity.</p>
+    </div>
+    <div class="card">
+      <h3>Future Project</h3>
+      <p>More projects coming soon...</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: youremail@example.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Kausthubh. Built with HTML, CSS, and JavaScript.</p>
+</footer>
+
+<script>
+  function scrollToProjects() {
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>
